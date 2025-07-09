@@ -7,7 +7,7 @@
 
 _download_dex_from_docker() {
     #docker_image="dexidp/dex"
-    docket_image="ghcr.io/timas130/dex"
+    docker_image="ghcr.io/timas130/dex"
     #debian=$(lsb_release --codename --short)
     #if [[ $debian = "bullseye" ]]; then
     #    docker_version="$(ynh_app_upstream_version)-distroless"
