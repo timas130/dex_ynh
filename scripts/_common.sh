@@ -23,7 +23,7 @@ _download_dex_from_docker() {
     fi
 
     mkdir -p "$install_dir/build"
-    ynh_docker_image_extract --dest_dir="$install_dir/build" --image_spec="$docker_image:v$docker_version" $docker_arg
+    ynh_docker_image_extract --dest_dir="$install_dir/build" --image_spec="$docker_image:$docker_version" $docker_arg
     mkdir -p "$install_dir/bin"
     mv "$install_dir/build/usr/local/bin/dex" "$install_dir/bin/"
     mv "$install_dir/build/srv/dex/web/" "$install_dir/web"
