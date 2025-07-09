@@ -49,7 +49,7 @@ ynh_docker_image_extract() {
 	tempdir="$(mktemp -d)"
 	pushd $tempdir
 		git init -q
-		git remote add -f -t main origin https://github.com/jjlin/docker-image-extract.git > /dev/null 2>&1
+		git remote add -f -t main origin https://github.com/timas130/docker-image-extract.git > /dev/null 2>&1
 		git checkout -q -b main origin/main
 		./docker-image-extract -p $os_arch_variant -o $dest_dir $image_spec 2>&1
 	popd

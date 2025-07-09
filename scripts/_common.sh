@@ -14,7 +14,7 @@ _download_dex_from_docker() {
     #elif [[ $debian = "bookworm" ]]; then
     #    docker_version="$(ynh_app_upstream_version)-alpine"
     #fi
-    docker_version="latest"
+    docker_version="sha256:2aef1b55c59b2dc7f5e083486138f3d6e34c6121140618830be80032e998090a"
 
     docker_arg=""
     # Fixup for armhf
